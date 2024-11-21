@@ -1,5 +1,5 @@
-# EX-4-ADVANCED-ENCRYPTION-STANDARD-DES-ALGORITHM
-
+# EX-8-ADVANCED-ENCRYPTION-STANDARD-DES-ALGORITHM
+# DATE:
 ## Aim:
   To use Advanced Encryption Standard (AES) Algorithm for a practical application like URL Encryption.
 
@@ -14,32 +14,35 @@
 #include <stdio.h>
 #include <string.h>
 
-void xor_encrypt_decrypt(char *input, char *key) {
-    int input_len = strlen(input);
-    int key_len = strlen(key);
 
-    for (int i = 0; i < input_len; i++) {
-        input[i] = input[i] ^ key[i % key_len]; 
-    }
+  void xor_encrypt_decrypt(char *input, char *key) {
+int input_len = strlen(input);
+int key_len = strlen(key);
+
+for (int i = 0; i < input_len; i++) {
+    input[i] = input[i] ^ key[i % key_len];
+}
 }
 
 int main() {
-    char url[] = "https://www.instagram.com/";
-    char key[] = "secretkey"; 
+    printf("\n\n\n\n      ***** ADVANCED-ENCRYPTION-STANDARD-DES-ALGORITHM *****\n\n\n");
+    
+char url[] = "BALA";
+char key[] = "secretkey"; 
 
-    printf("Original URL: %s\n", url);
+printf("Original text: %s\n", url);
 
-    xor_encrypt_decrypt(url, key);
-    printf("Encrypted URL: %s\n", url);
+xor_encrypt_decrypt(url, key);
+printf("Encrypted text: %s\n", url);
 
-    xor_encrypt_decrypt(url, key);
-    printf("Decrypted URL: %s\n", url);
+xor_encrypt_decrypt(url, key);
+printf("Decrypted text: %s\n", url);
 
-    return 0;
+return 0;
 }
 ```
 ## OUTPUT:
-![Screenshot 2024-10-19 105948](https://github.com/user-attachments/assets/c6ae8ae4-50f6-4876-8efa-1c0d14a5b61f)
+![Screenshot 2024-11-21 102759](https://github.com/user-attachments/assets/00287aad-eaa9-4aa8-bc5d-a19f754e5bb0)
 
 ## RESULT: 
 Thus , to use Advanced Encryption Standard (AES) Algorithm for a practical application like URL Encryption is done successfully.
